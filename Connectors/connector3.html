@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Next Generation Terminal Lug for Aircraft</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px
+    }
+
+    .widthMax {
+      max-width: 60%;
+      transform: translate(30%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey"
+        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="mainPage.html" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">Home</a>
+      <a href="researchMain.html"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Research</a>
+      <a href="aboutUs.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-container w3-grey w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-xxxlarge w3-widthMax">Connector Option 3</h1>
+  </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Connector Option 2</h1>
+        <p class="w3-text-black w3-large">The busbar style connector can be used for grounding or energized purposes. 
+          In order to be used for grounding purposes it must be mounted to the aircraft at the desired ground location. 
+          The busbar design shape and number of wire connections can be modified. It can have as few as two or as many as safely can be connected. 
+          The benefit with these is the ability to ground multiple things with one attachment to the plane. 
+          These would still require a tool (screwdriver or allen wrench) and torque specification check</p>
+      </div>
+
+      <div class="w3-third w3-center">
+        <img src="Pictures/BusBar.png" >
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-grey">
+    <div class="w3-xlarge w3-padding-32">
+
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
